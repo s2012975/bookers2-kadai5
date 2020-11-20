@@ -1,0 +1,23 @@
+<% if @model == "user" %>
+	<h2><%= "Users serch for '#{@content}'" %>
+
+	</h2>	
+<% else %>
+	<h2><%= "Books serch for '#{@content}'" %></h2>
+	<table class='table table-hover table-inverse'>
+	  <thead>
+	    <tr>
+	      <th></th>
+	      <th>Title</th>
+	      <th>Opinion</th>
+	      <th colspan="3"></th>
+	    </tr>
+	  </thead>
+	
+	  <tbody>
+
+	        <td><%= @datas.name %></td>
+
+	  </tbody>
+	</table>
+<% end %>
